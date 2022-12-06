@@ -1,0 +1,25 @@
+import sys
+
+def ${day}_p1(input_file):
+    return
+
+def ${day}_p2(input_file):
+    return
+
+def main():
+    n = len(sys.argv)
+    if n != 3:
+        return "Usage: ${day}.py <input_file> <p1 | p2>"
+    
+    input_file = sys.argv[1]
+    part = sys.argv[2]
+    if part == "p1":
+        return ${day}_p1(input_file)
+    elif part == "p2":
+        return ${day}_p2(input_file)
+    else:
+        return "Invalid problem part. Must be either p1 or p2"
+
+if __name__ == "__main__":
+    out = main()
+    print(out)
